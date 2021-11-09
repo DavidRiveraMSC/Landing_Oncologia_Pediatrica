@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: 0.4s;
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  background-color: #333;
+
+  position: relative;
+}
+
+nav ul li{
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+nav ul li:hover{
+   background-color: #111;
+}
+a{
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+nav ul li a.active{
+  background-color: dodgerblue;
+  color: white;
+}
+.Banner{
+  background-image: url("/IMG/Banner_1.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#Texto_Banner{
+  font-family: 'Noto Serif Display', serif;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+#titulo{
+  font-size: 8em;
+}
+#titulo2{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  font-family: 'Playball', cursive;
+  font-size: 2em;
+}
+#titulo3{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  font-family: 'Playball', cursive;
+  font-size: 2em;
+}
+#Texto_Principal{
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 600px;
+  height: 180px;
+  font-family: 'Quicksand', sans-serif;
+}
+#Texto_Principal h2{
+  margin-bottom: 8px;
+}
+#contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contenedor article{
+  margin:10px auto;
+  border-radius:5px;
+  width: 350px;
+  height: 400px;
+  position: relative;
+}
+#art1{
+  background-repeat:no-repeat;
+  background:url("/IMG/Article_1.jpg");
+  background-size: cover;
+  background-position: right;
+}
+#art2{
+  background-repeat:no-repeat;
+  background:url("/IMG/Article_2.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#art3{
+  background-repeat:no-repeat;
+  background:url("/IMG/Article_3.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+#art1:hover #overlay {
+  opacity: 1;
+}
+#art2:hover #overlay {
+  opacity: 1;
+}
+#art3:hover #overlay {
+  opacity: 1;
+}
+#text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  padding: 5px;
+}
+footer{
+  background-color: #262323;
+  height: 50px;
+  color: white;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p{
+  margin-top: 10px;
+}
+
+/*CAMBIOS PARA DISEÑO RESPONSIVO*/
+@media (max-width: 600px) {
+  #Texto_Banner{
+    font-size: 1.5em;
+  }
+  #Texto_Principal{
+    width: 250px;
+    height: 300px;
+  }
+  #contenedor article{
+    width: 300px;
+  }
+}
