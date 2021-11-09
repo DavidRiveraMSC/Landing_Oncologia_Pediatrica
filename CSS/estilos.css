@@ -164,7 +164,38 @@ footer p{
   }
   #Texto_Principal{
     width: 250px;
-    height: 300px;
+    height: 400px;
+  }
+  #titulo{
+    font-size: 3.5em;
+  }
+  #titulo2{
+    font-size: 1em;
+  }
+  #titulo3{
+    font-size: 1em;
+  }
+  #contenedor article{
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  #Texto_Banner{
+    font-size: 1em;
+  }
+  #Texto_Principal{
+    width: 200px;
+    height: 400px;
+  }
+  #titulo{
+    font-size: 3.5em;
+  }
+  #titulo2{
+    font-size: 1.5em;
+  }
+  #titulo3{
+    font-size: 1em;
   }
   #contenedor article{
     width: 300px;
