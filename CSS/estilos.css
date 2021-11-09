@@ -41,7 +41,7 @@ nav ul li a.active{
   color: white;
 }
 .Banner{
-  background-image: url("/IMG/Banner_1.jpg");
+  background-image: url("IMG/Banner_1.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   position: relative;
   width: 100%;
@@ -99,19 +99,19 @@ nav ul li a.active{
 }
 #art1{
   background-repeat:no-repeat;
-  background:url("/IMG/Article_1.jpg");
+  background:url("IMG/Article_1.jpg");
   background-size: cover;
   background-position: right;
 }
 #art2{
   background-repeat:no-repeat;
-  background:url("/IMG/Article_2.jpg");
+  background:url("IMG/Article_2.jpg");
   background-size: cover;
   background-position: top;
 }
 #art3{
   background-repeat:no-repeat;
-  background:url("/IMG/Article_3.jpg");
+  background:url("IMG/Article_3.jpg");
   background-size: cover;
   background-position: top;
 }
